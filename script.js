@@ -71,7 +71,7 @@ function sayHey(){
 }
 
 //arrow function
-const sayHey1 = ()=>{
+/* const sayHey1 = ()=>{
     console.log('Hey there')
 }
 sayHey1()
@@ -84,4 +84,16 @@ const obj = {
         console.log(this.vale)
     }
 }
-obj.myFunction()
+obj.myFunction() */
+
+
+//High Order Function and Callback
+
+function add(a,b, cb){
+    let result = a + b;
+    cb(result)
+
+    return () => console.log("result: ",result)
+}
+let resultFunction = add(2,4, () => {})
+resultFunction()
