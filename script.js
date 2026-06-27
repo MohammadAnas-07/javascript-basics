@@ -64,11 +64,11 @@ addNumbers1(10, 22, 33, 44, 5)
 
 // 2.Hoisting
 //Normal Function
-sayHey()
+/* sayHey()
 
 function sayHey(){
     console.log("Heyy there")
-}
+} */
 
 //arrow function
 /* const sayHey1 = ()=>{
@@ -101,7 +101,7 @@ resultFunction() */
 
 //Arrays
 
-const students = ["Anas","John","Jane"]
+/* const students = ["Anas","John","Jane"]
 const marks = [1,2,3,4,5]
 
 const myMarks = [6, true, 'Anas','😊']
@@ -112,10 +112,61 @@ students.push('Alexa')
 students.reverse()
 console.log(students[0],students)
 console.log(merged)
-console.log(myMarks.indexOf('Anas'))
+console.log(myMarks.indexOf('Anas')) */
 
 
 // Arrays High Order Function
+//forEach()
+/* const students = ["Anas","John","Jane","Bill"]
+
+function print(n){
+    console.log(n)
+}
+students.forEach(print) */
+
+//map()
+/* const numbers = [1,2,3,4,5,6,7]
+
+function double(n){
+    return n * 2
+
+}
+let newArr = numbers.map(double)
+
+console.log("newArr: ", newArr)
+console.log("numbers: ", numbers) */
 
 
+//find
+/* const numbers1 = [1,2,3,4,5,6,7]
 
+let ans = numbers1.find((num)=>num === 4)
+console.log(ans)
+
+//includes
+const includes = numbers.includes(3)
+console.log(includes)
+ */
+
+//filter 
+/* const number2 = [1,2,3,4,5,6,7]
+
+const newArr2 = numbers.filter((num)=>num % 2 !== 0)
+console.log(newArr2)
+ */
+
+//slice
+
+/* const sliceArr = [1,2,3,4,5,6,7]
+
+let newSlice = sliceArr.slice(1,5)
+console.log(newSlice) */
+
+//splice
+
+const spliceArr = [1,2,3,4,5,6,7]
+
+let newArr = spliceArr.splice(1,4)
+
+console.log(newArr)
+console.log(spliceArr)
