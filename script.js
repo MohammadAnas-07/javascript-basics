@@ -89,11 +89,33 @@ obj.myFunction() */
 
 //High Order Function and Callback
 
-function add(a,b, cb){
+/* function add(a,b, cb){
     let result = a + b;
     cb(result)
 
     return () => console.log("result: ",result)
 }
 let resultFunction = add(2,4, () => {})
-resultFunction()
+resultFunction() */
+
+
+//Arrays
+
+const students = ["Anas","John","Jane"]
+const marks = [1,2,3,4,5]
+
+const myMarks = [6, true, 'Anas','😊']
+const merged = [...marks,...myMarks]
+
+students[0] = "Mohammad Anas"
+students.push('Alexa')
+students.reverse()
+console.log(students[0],students)
+console.log(merged)
+console.log(myMarks.indexOf('Anas'))
+
+
+// Arrays High Order Function
+
+
+
