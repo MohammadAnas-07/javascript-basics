@@ -37,3 +37,16 @@ els.forEach((el) => {
  el.addEventListener("click",()=>{
     console.log("Anas")
  }) */
+
+
+// Create Element Dynamically
+
+/* const button = document.getElementById("clickButton")
+const container = document.getElementById("my-container")
+
+button.addEventListener('click', () =>{
+    const el = document.createElement('h1')
+    el.innerText = 'Anas'
+    container.appendChild(el)
+})
+ */
