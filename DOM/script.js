@@ -8,9 +8,22 @@ userName.innerText = "Shamim" */
 
 // getElement
 
-const el = document.getElementById("username")
+/* const el = document.getElementById("username")
 el.innerText = "John Dave"
 el.classList.add("red-color")
 setTimeout(()=>{
     el.classList.add("underline")
-},2000)
+},2000) */
+
+const elements = document.getElementsByClassName("block")
+for( let i = 0; i < elements.length; i++ ){
+    elements[i].style.background = "blue"
+
+}
+
+// Better approach: querySelectorAll()
+const els = document.querySelectorAll(".remove");
+
+els.forEach((el) => {
+    el.classList.remove("remove");
+});
